@@ -4,13 +4,13 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new(post_params)
+    @post = Post.new
   end
 
   def create
     @post = Post.new(post_params)
     if @post.save
-      redirect_to "/posts/index"
+      redirect_to root_path
     else
       render "posts/new"
     end
@@ -24,6 +24,6 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:content, image)
+    params.require(:post).permit(:content, :post_image)
   end
 end

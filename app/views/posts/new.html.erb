@@ -1,0 +1,9 @@
+<%= form_for @post, url: {action: 'create'} do |f| %>
+ <%= f.label :post_image, "本文"%>
+ <%= f.attachment_field :post_image %>
+
+ <%= f.label :content, "本文"%>
+ <%= f.text_area :content, size:"20x10" %>
+
+ <%= f.submit "投稿する"%>
+<% end %>

@@ -92,3 +92,8 @@ h2 {
 .navbar_item {
   margin: 24px 10px;
 }
+/* post */
+
+.post_image {
+  width: 100%;
+}
