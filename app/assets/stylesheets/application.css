@@ -21,10 +21,14 @@ h2 {
 }
  body {
    margin: 0;
+   background-color: #fafafa;
  }
  a {
    text-decoration: none;
    color: #000000;
+ }
+ li {
+   list-style: none;
  }
 
  /* top */
@@ -59,4 +63,32 @@ h2 {
 .btn a {
   display: block;
   color: #ffffff;
+}
+/* application */
+.container {
+  width: 1000px;
+  margin: 30px auto 0;
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid gray;
+  line-height: 20px;
+}
+.nav_container {
+  display: flex;
+  width: 1000px;
+  margin: 0 auto 0;
+}
+.logo {
+  font-family: cursive;
+}
+.navbar_content {
+  display: flex;
+  margin: 0 0 0 auto;
+}
+.navbar_item {
+  margin: 24px 10px;
 }
